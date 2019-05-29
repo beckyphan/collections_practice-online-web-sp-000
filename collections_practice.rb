@@ -44,7 +44,7 @@ end
 def find_a(array)
   a = []
   array.select do |string|
-    if string.starts_with?("a") 
+    if string.start_with?("a") 
       a.push(string)
     else 
       nil
