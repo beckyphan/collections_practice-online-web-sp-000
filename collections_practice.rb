@@ -54,4 +54,19 @@ def find_a(array)
 end 
 
 def sum_array(array)
-  
+  array.inject do |sum, num|
+    sum += num
+  end
+end
+
+def add_s(words)
+  new = []
+  words.each_with_index.collect do |element, index|
+    if index == 1 
+      new.push(element)
+    else 
+      new.push(element += "s")
+    end 
+  end
+  new
+end
